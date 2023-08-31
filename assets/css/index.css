@@ -1,0 +1,5 @@
+@import "./global.css";
+@import "./reset.css";
+
+@import "../components/Home/style.css";
+@import "../components/AddQuestion/style.css";

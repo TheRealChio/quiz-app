@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release-pro/v4.0.8/css/solid.css?key=0dc2d6c0-3eb8-11ee-a183-0242ac140003"
+    />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <script type="module" src="form.js" defer></script>
+    <title>QuizMe</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="wrapper top-wrapper">
+        <div class="header-text">
+          <h1>QuizMe</h1>
+          <span>Write a question!</span>
+        </div>
+      </header>
+
+      <main class="wrapper main-wrapper">
+        <form class="form-container" data-js="form">
+          <label for="question" class="label">Question</label>
+          <textarea
+            type="text"
+            name="question"
+            id="question"
+            placeholder="Type your question.."
+            pattern="[a-zA-Z0-9?]+"
+            minlength="10"
+            maxlength="100"
+            rows="3"
+            cols="40"
+            required
+            class="input"
+          ></textarea>
+
+          <label for="answer" class="label">Answer</label>
+          <textarea
+            type="text"
+            name="answer"
+            id="answer"
+            placeholder="Type the answer.."
+            pattern="[a-zA-Z0-9.]+"
+            minlength="10"
+            maxlength="100"
+            rows="3"
+            cols="40"
+            required
+            class="input"
+          ></textarea>
+
+          <label for="tag" class="label">Category</label>
+          <select name="tag" id="tag" class="select">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+          </select>
+
+          <button type="submit" class="submit-button">Send Question</button>
+        </form>
+      </main>
+
+      <footer class="wrapper bottom-wrapper">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a href="../Home/index.html"><i class="uil uil-estate"></i></a>
+            </li>
+            <li class="navigation-list-item">
+              <i class="uil uil-bookmark"></i>
+            </li>
+            <li class="navigation-list-item">
+              <i class="uil uil-plus-square"></i>
+            </li>
+            <li class="navigation-list-item"><i class="uil uil-user"></i></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

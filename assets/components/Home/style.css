@@ -1,0 +1,132 @@
+.header-text {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.uil-redo {
+  color: #ec7693;
+  position: absolute;
+  right: 3%;
+  top: 2%;
+}
+
+.main-wrapper {
+  margin-block: 4rem 5rem;
+}
+
+.question-content {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(45deg, #ec7693, #ec8670);
+  box-shadow: 5px 5px rgba(68, 68, 68, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+
+.question-card-bookmark {
+  position: absolute;
+  left: 90%;
+}
+
+.question-card-question,
+.question-card-answer {
+  color: white;
+  position: absolute;
+  font-size: 1rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  text-align: center;
+}
+
+.show-answer-button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  color: #ec7693;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.show-answer-button:hover {
+  color: white;
+  background: #ecb976;
+}
+
+.question-card-tags {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.tag-list-item {
+  color: white;
+}
+
+.display-none {
+  display: none;
+}
+
+.bottom-wrapper {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background: white;
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.bottom-wrapper,
+.navigation {
+  width: 100%;
+}
+
+.navigation-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navigation-list-item i {
+  color: #ec7693;
+}
+
+@media only screen and (max-width: 530px) {
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .tag-list-item {
+    font-size: 0.9rem;
+  }
+  .question-content {
+    width: 100vw;
+  }
+  .question-card {
+    width: 320px;
+  }
+  .show-answer-button {
+    width: 60%;
+  }
+  .navigation-list {
+    justify-content: space-around;
+  }
+}
